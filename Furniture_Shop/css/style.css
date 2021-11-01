@@ -216,8 +216,16 @@
   text-decoration: underline;
 }
 
+.hum {
+  display: none;
+}
+
 .hums {
   display: none;
+}
+
+.hums:hover {
+  cursor: pointer;
 }
 
 .humburger {
