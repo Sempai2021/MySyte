@@ -1,47 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap");
-
 @font-face {
-  font-family: CormorantUpright;
+  font-family: Rubik Beastly;
   font-display: swap;
-  src: url("../fonts/CormorantUpright-Bold.woff2") format("woff2"), url("../fonts/CormorantUpright-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: CormorantUpright;
-  font-display: swap;
-  src: url("../fonts/CormorantUpright-Regular.woff2") format("woff2"), url("../fonts/CormorantUpright-Regular.woff") format("woff");
+  src: url("../fonts/RubikBeastly-Regular.woff2") format("woff2"), url("../fonts/RubikBeastly-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
-
-@font-face {
-  font-family: CormorantUpright;
-  font-display: swap;
-  src: url("../fonts/CormorantUpright-SemiBold.woff2") format("woff2"), url("../fonts/CormorantUpright-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: TTTrailers;
-  font-display: swap;
-  src: url("../fonts/TTTrailers-Regular.woff2") format("woff2"), url("../fonts/TTTrailers-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 ul[class],
@@ -100,26 +71,17 @@ body {
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-height: 100%;
 }
 
 .main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .footer {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .container {
@@ -142,7 +104,6 @@ body {
   padding: 25px 0 0 0;
   position: relative;
 }
-
 .header::after {
   position: absolute;
   content: "";
@@ -151,7 +112,6 @@ body {
   height: 1px;
   background: #e85fdf;
 }
-
 .header__title {
   font-size: 64px;
   font-family: "Rubik Beastly", cursive;
@@ -160,12 +120,10 @@ body {
   border-bottom: thick double black;
   margin-bottom: 50px;
 }
-
 .header__comander {
   margin-bottom: 60px;
   position: relative;
 }
-
 .header__comander::after {
   position: absolute;
   content: "";
@@ -180,7 +138,6 @@ body {
   .header {
     padding: 10px 0 0 0;
   }
-
   .header::after {
     top: 95px;
   }
