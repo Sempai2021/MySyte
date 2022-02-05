@@ -1,7 +1,8 @@
 @font-face {
   font-family: Rubik Beastly;
   font-display: swap;
-  src: url("../fonts/RubikBeastly-Regular.woff2") format("woff2"), url("../fonts/RubikBeastly-Regular.woff") format("woff");
+  src: url("../fonts/RubikBeastly-Regular.woff2") format("woff2"),
+    url("../fonts/RubikBeastly-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -97,12 +98,13 @@ body {
 }
 
 body {
-  background: #e8c8e6;
+  background: #404040;
 }
 
 .header {
   padding: 25px 0 0 0;
   position: relative;
+  color: #e85fdf;
 }
 .header::after {
   position: absolute;
@@ -123,6 +125,8 @@ body {
 .header__comander {
   margin-bottom: 60px;
   position: relative;
+  color: red;
+  font-weight: bold;
 }
 .header__comander::after {
   position: absolute;
