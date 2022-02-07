@@ -1,0 +1,163 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+body {
+  background:#eeddeb;
+  font-family: 'Syne Tactile', cursive;
+}
+
+
+.content {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    width: 100%;
+  }
+  &__wrap {
+    padding: 25px;
+    border-radius:25px;
+    border: 15px solid black;
+    height: 450px;
+    flex: 0 1 500px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      right: -16px;
+      top:-16px;
+      height: 50px;
+      width: 50px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(@img/col.png);
+      z-index: 10;
+    }
+  }
+  &__title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 48px;
+    margin-bottom: 15px;
+  }
+  &__name {
+    text-align: center;
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 35px;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    justify-content: center;
+
+
+  }
+  &__social-link {
+    flex: 0 0 100px;
+    height: 100px;
+  }
+  &__social-link + .content__social-link {
+    margin-left: 25px;
+  }
+  &__social-link:nth-child(4) {
+    margin-left: 0px;
+  }
+  &__social-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+
+.green {
+  color:#3fe80c;
+}
+
+.red {
+  color:#e80c16;
+
+}
+
+.yellow {
+  color:#e8fe16;
+}
+
+.pink {
+  color:#ff17ff;
+
+}
+
+.blue {
+  color:#17d1ff;
+}
+
+
+.orange {
+  color:#ff8d17;
+}
+
+.brown {
+  color:#663909;
+}
+
+.grey {
+  color:#3a3836;
+}
+
+.violet {
+  color:#760878;
+}
+
+@media (max-width: 1200px) {
+  .content__container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .content__container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content__container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 577px) {
+  .content__container {
+    max-width: 320px;
+  }
+  .content__title {
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .content__name {
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 25px;
+  }
+  .content__social {
+    height: 140px;
+}
+  .content__social-link {
+    flex: 0 0 53px;
+    height: 53px;
+}
+.content__wrap {
+    height: 288px;
+}
+}
