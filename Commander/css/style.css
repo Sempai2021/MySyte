@@ -125,7 +125,7 @@ body {
 .header__comander {
   margin-bottom: 60px;
   position: relative;
-  color: red;
+  color: white;
   font-weight: bold;
 }
 .header__comander::after {
@@ -150,4 +150,7 @@ body {
     font-size: 26px;
     margin-bottom: 37px;
   }
+}
+span {
+  color: greenyellow;
 }
