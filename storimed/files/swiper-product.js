@@ -48,8 +48,8 @@ let comments = new Swiper('.comments__swiper', {
   spaceBetween: 24,
 
   navigation: {
-    nextEl: '.comments__prev',
-    prevEl: '.comments__next',
+    nextEl: '.comments__next',
+    prevEl: '.comments__prev',
   },
 
   breakpoints: {
@@ -83,7 +83,9 @@ let comments = new Swiper('.comments__swiper', {
 let galleryThumbs = new Swiper('.gallery-thumbs', {
       spaceBetween: 10,
       slidesPerView: 4,
+      loopedSlides: 0,
       loop: true,
+      // loop: true,
       freeMode: true,
        direction: 'vertical',
 
@@ -127,7 +129,7 @@ let galleryThumbs = new Swiper('.gallery-thumbs', {
     var galleryTop = new Swiper('.gallery-top', {
       spaceBetween: 0,
       loop: true,
-      loopedSlides: 1,
+      loopedSlides: 0,
        //looped slides should be the same
       navigation: {
         nextEl: '.fotorama__img-next',
