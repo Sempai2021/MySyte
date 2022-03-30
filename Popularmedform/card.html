@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+	 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Главная</title>
+</head>
+	<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+	<body>
+		<div class="wrapper">
+			  <header class="header dark">
+   <div class="header__container">
+      <div class="header__head">
+         <a href="#" class="header__logo">
+            <div class="header__logo-img"><img src="img/logo.svg" alt=""></div>
+            <span class="header__logo-text white-logo">Popularmedform</span>
+         </a>
+                  <div id="openBurger"  class="header__bug">
+                     <div class="header__burger">
+                        <span class="header__burger-up header__burger-wh"></span>
+                        <span class="header__burger-wh"></span>
+                        <span class="header__burger-up header__burger-wh"></span>
+                    </div>
+                  </div>
+                  <nav class="header__menu">
+                     <ul class="header__list">
+                           <span id="closeModal" class="header__close" ><img src="img/close.png" alt=""></span>
+                           <li><a href="#" class="header__link header__link--active white">Главная</a></li>
+                           <li><a href="#" class="header__link white">Доставка</a></li>
+                           <li><a href="#" class="header__link white">Оплата</a></li>
+                           <li><a href="#" class="header__link white">Контакты</a></li>
+                     </ul>
+                  </nav>
+
+         <nav id="modal" class="header__menus modal">
+
+            <ul class="header__list">
+                  <span id="closeModal" class="header__close" ><img src="img/close.png" alt=""></span>
+                  <li><a href="#" class="header__link header__link--active">Главная</a></li>
+                  <li><a href="#" class="header__link">Доставка</a></li>
+                  <li><a href="#" class="header__link ">Оплата</a></li>
+                  <li><a href="#" class="header__link ">Контакты</a></li>
+            </ul>
+         </nav>
+         <div class="header__timer">
+            <div class="header__timer-img"><img src="img/timer.svg" alt=""></div>
+            <div class="header__timer-text">
+               Прием заказов:<br> <span>Круглосуточно 24/7</span>
+            </div>
+         </div>
+         <div class="header__item-text">
+            <div class="header__language"><img src="img/ru.png" alt=""></div>
+            <a class="header__text white" href="#">Кременчуг-Константиновское</a>
+         </div>
+      </div>
+   </div>
+      
+   
+
+</header>
+		<main class="main">
+
+			<section class="basket">
+				<div class="basket__container">
+					<ul class="information__way">
+						<li class="information__way-link"><a href="#">Главная</a></li>
+						<li class="information__way-link"><span>Папифекс (Papifex)</span></li>
+					</ul>
+					<div class="title basket__title">Папифекс (Papifex)</div>
+					<div class="basket__items">
+					<div class="basket__toggle">
+						<input class="basket__toggle-item" type="checkbox">
+						<div class="basket__toggle-text">В наличии</div>
+					</div>
+					<div class="basket__rating">
+						<div class=" "><img src="img/rating.png" alt=""></div>
+						<div class="basket__item-rating"><img src="img/rating.png" alt=""></div>
+						<div class="basket__item-rating"><img src="img/rating.png" alt=""></div>
+						<div class="basket__item-rating"><img src="img/rating.png" alt=""></div>
+						<div class="basket__item-rating"><img src="img/rating-none.png" alt=""></div>
+					</div>
+					<a class="btn basket__comment" href="#">Написать отзыв</a>
+				</div>
+				<div class="basket__body">
+					<div class="basket__fotorama">
+						
+						<div class="basket__fotorama-images camera">
+							<div class="swiper gallery-top">
+						    <div class="swiper-wrapper">
+						      <div class="swiper-slide camera__slide"><img src="img/fotorama-img.png" alt=""></div>
+						      <div class="swiper-slide camera__slide"><img src="img/fotorama-img.png" alt=""></div>
+						      <div class="swiper-slide camera__slide"><img src="img/fotorama-img.png" alt=""></div>
+						      <div class="swiper-slide camera__slide"><img src="img/fotorama-img.png" alt=""></div>
+
+						    </div>
+
+						    
+						  </div>
+						  <div class="fotorama__img-next swiper-button-white">
+						    	<svg width="22" height="38" viewBox="0 0 22 38"  xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.7678 20.7678C21.7441 19.7915 21.7441 18.2085 20.7678 17.2322L4.85787 1.32233C3.88155 0.346019 2.29864 0.346019 1.32233 1.32233C0.34602 2.29864 0.34602 3.88155 1.32233 4.85786L15.4645 19L1.32233 33.1421C0.346019 34.1184 0.346019 35.7014 1.32233 36.6777C2.29864 37.654 3.88155 37.654 4.85786 36.6777L20.7678 20.7678ZM17 21.5L19 21.5L19 16.5L17 16.5L17 21.5Z" />
+							</svg></div>
+						    <div class="fotorama__img-prev swiper-button-white">
+							    	<svg width="22" height="38" viewBox="0 0 22 38" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.23223 17.2322C0.255922 18.2085 0.255922 19.7915 1.23223 20.7678L17.1421 36.6777C18.1184 37.654 19.7014 37.654 20.6777 36.6777C21.654 35.7014 21.654 34.1184 20.6777 33.1421L6.53553 19L20.6777 4.85787C21.654 3.88155 21.654 2.29864 20.6777 1.32233C19.7014 0.34602 18.1184 0.34602 17.1421 1.32233L1.23223 17.2322ZM3 21.5L5 21.5L5 16.5L3 16.5L3 21.5Z" />
+									</svg>
+						    </div>
+						</div>
+
+						  <div class="basket__fotorama-choise choise">
+						  	<div class="swiper gallery-thumbs choise__swiper">
+						    <div class="swiper-wrapper">
+						      <div class="swiper-slide choise__slide" ><div class="choise__slide-img"><img src="img/fotorama-img-1.png" alt=""></div></div>
+						      <div class="swiper-slide choise__slide" ><div class="choise__slide-img"><img src="img/fotorama-img-1.png" alt=""></div></div>
+						      <div class="swiper-slide choise__slide" ><div class="choise__slide-img"><img src="img/fotorama-img-1.png" alt=""></div></div>
+						      <div class="swiper-slide choise__slide" ><div class="choise__slide-img"><img src="img/fotorama-img-1.png" alt=""></div></div>
+						    </div>
+						  </div>
+						  </div>
+						  <div class="basket__info basket__info--setting">
+						<div class="basket__info-item basket__info-item--setting">
+							<div class="basket__info-title">Код товара:</div>
+							<div class="basket__info-subtitle">KZ-104-52124B</div>
+						</div>
+						<div class="basket__info-item basket__info-item--setting">
+							<div class="basket__info-title">Оплата:</div>
+							<div class="basket__info-subtitle">При получении, наличными или банковкой картой</div>
+						</div>
+						<div class="basket__info-item basket__info-item--setting">
+							<div class="basket__info-title">Способы доставки:</div>
+							<div class="basket__info-subtitle">Курьер (1-3 дней)/Почта (2-7 дней)</div>
+						</div>
+					</div>
+
+					</div>
+					<div class="basket__forms forms forms--setting">
+						<div class="forms__title">Оформить заказ</div>
+						<form action="#" class="forms__item">
+							<div class="forms__item-title">1. Введите контактные данные:</div>
+							<input type="text" class="forms__name" placeholder="Имя">
+							<input type="text" class="forms__tel" placeholder="Телефон">
+							<div class="forms__item-title">2. Выберите язык оператора:</div>
+							<div class="forms__language">
+								<div class="forms__lan-item forms__lan-item--active">Русский</div>
+								<div class="forms__lan-item">Native</div>
+							</div>
+							<div class="forms__item-title"> 3. Выберите способ доставки:</div>
+							<div class="forms__choise">
+								<div class="forms__lan-item forms__lan-item--active">Курьер</div>
+								<div class="forms__lan-item">Почта</div>
+							</div>
+
+							<div class="forms__price price">
+								<div class="price__title">Цена:</div>
+								<div class="price__money">999 тенге</div>
+							</div>
+							<button class="btn forms__btn">Заказать сейчас</button>
+						</form>
+						<div class="basket__information">* Ограниченное предложение</div>
+						<div class="basket__info-descr">Нажимая на кнопку «Заказать сейчас», <br>
+вы соглашаетесь с политикой конфиденциальности</div>
+					</div>
+					<div class="basket__info basket__info--none">
+						<div class="basket__info-item basket__info-item--setting">
+							<div class="basket__info-title">Код товара:</div>
+							<div class="basket__info-subtitle">KZ-104-52124B</div>
+						</div>
+						<div class="basket__info-item basket__info-item--setting">
+							<div class="basket__info-title">Оплата:</div>
+							<div class="basket__info-subtitle">При получении, наличными или банковкой картой</div>
+						</div>
+						<div class="basket__info-item basket__info-item--setting">
+							<div class="basket__info-title">Способы доставки:</div>
+							<div class="basket__info-subtitle">Курьер (1-3 дней)/Почта (2-7 дней)</div>
+						</div>
+					</div>
+					
+				</div>
+				</div>
+
+			</section>
+
+
+			 	
+
+
+
+			<section class="product">
+				<div class="product__container">
+					<div class="title product__title">О продукте</div>
+					<div class="product__swipers">
+
+							<div class="swiper product__swiper">
+
+						  <div class="swiper-wrapper product__wrapper">
+						    <div class="swiper-slide product__slide product__item">
+								<div class="product__images"><img src="img/product-img-1.png" alt="Ягоды годжи"></div>
+								<div class="product__item-title">Ягоды годжи</div>
+							 </div>
+							<div class=" swiper-slide product__item">
+								<div class="product__images"><img src="img/product-img-2.png" alt="Ягоды годжи"></div>
+								<div class="product__item-title">Куркума</div>
+							 </div>
+							 <div class=" swiper-slide product__item">
+								<div class="product__images"><img src="img/product-img-1.png" alt="Ягоды годжи"></div>
+								<div class="product__item-title"> Грейпфрут</div>
+							 </div>
+							 <div class=" swiper-slide product__item">
+								<div class="product__images"><img src="img/product-img-2.png" alt="Ягоды годжи"></div>
+								<div class="product__item-title">Семена льна</div>
+							 </div>
+							 <div class=" swiper-slide product__item">
+								<div class="product__images"><img src="img/product-img-1.png" alt="Ягоды годжи"></div>
+								<div class="product__item-title">Спирулина</div>
+							 </div>
+						  </div>
+						</div>
+
+						  <div class="product__prev"><svg width="22" height="38" viewBox="0 0 22 38"  xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.7678 20.7678C21.7441 19.7915 21.7441 18.2085 20.7678 17.2322L4.85787 1.32233C3.88155 0.346019 2.29864 0.346019 1.32233 1.32233C0.34602 2.29864 0.34602 3.88155 1.32233 4.85786L15.4645 19L1.32233 33.1421C0.346019 34.1184 0.346019 35.7014 1.32233 36.6777C2.29864 37.654 3.88155 37.654 4.85786 36.6777L20.7678 20.7678ZM17 21.5L19 21.5L19 16.5L17 16.5L17 21.5Z" />
+							</svg></div>
+													  <div class="product__next"><svg width="22" height="38" viewBox="0 0 22 38" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.23223 17.2322C0.255922 18.2085 0.255922 19.7915 1.23223 20.7678L17.1421 36.6777C18.1184 37.654 19.7014 37.654 20.6777 36.6777C21.654 35.7014 21.654 34.1184 20.6777 33.1421L6.53553 19L20.6777 4.85787C21.654 3.88155 21.654 2.29864 20.6777 1.32233C19.7014 0.34602 18.1184 0.34602 17.1421 1.32233L1.23223 17.2322ZM3 21.5L5 21.5L5 16.5L3 16.5L3 21.5Z" />
+							</svg>
+							</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="info">
+				<div class="info__container">
+					<div class="title info__title">Информация</div>
+					<div class="info__body">
+						<div class="info__item-title">Папифекс (Papifex)</div>
+					<div class="info__item-descr">Кетоформ для снижения веса поможет не только добиться отличных результатов, но и удержать их после отмены препарата. 
+Залогом безопасности такого похудения служат натуральные компоненты, входящие в состав. Лишний вес негативно влияет 
+на качество жизни. Из-за ожирения человек теряет внешнюю привлекательность, начинаются проблемы со здоровьем. Капсулы 
+Ketoform являются идеальным средством для худеющих. Препарат стабилизирует обменные процессы, предупреждает развитие 
+сопутствующих ожирению болезней, контролирует массу тела. Способ применения: по 1 капсуле 2 раза в день, запивая 
+100 мл жидкости. Жиросжигающий эффект обеспечивается при прохождении полноценного месячного курса. Следует строго 
+соблюдать промежуток в 12 часов между каждым приемом препарата. Противопоказания: детский возраст, язва, гастрит и прочие
+патологии ЖКТ в фазе обострения, аллергия, индивидуальная непереносимость компонентов.Кетоформ для снижения веса поможет 
+не только добиться отличных результатов, но и удержать их после отмены препарата. Залогом безопасности такого похудения служат 
+натуральные компоненты, входящие в состав. Лишний вес негативно влияет на качество жизни. Из-за ожирения человек теряет 
+внешнюю привлекательность, начинаются проблемы со здоровьем. Капсулы Ketoform являются идеальным средством для худеющих. 
+Препарат стабилизирует обменные процессы, предупреждает развитие сопутствующих ожирению болезней, контролирует массу тела. </div>
+					<div class="info__item-title">Способ применения </div>
+					<div class="info__item-descr">по 1 капсуле 2 раза в день, запивая 100 мл жидкости. Жиросжигающий эффект обеспечивается 
+при прохождении полноценного месячного курса. Следует строго соблюдать промежуток в 12 часов между каждым приемом
+ препарата. Противопоказания: детский возраст, язва, гастрит и прочие патологии ЖКТ в фазе обострения, аллергия, индивидуальная 
+непереносимость компонентов.</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="info-item">
+				<div class="info-item__container">
+					<div class="info__element">
+						<div class="info__ele-name">Производитель:</div>
+						<div class="info__ele-info">«Dalmatika» Ltd</div>
+					</div>
+					<div class="info__element">
+						<div class="info__ele-name">Срок хранения:</div>
+						<div class="info__ele-info">3 года</div>
+					</div>
+					<div class="info__element">
+						<div class="info__ele-name">Условия хранения:</div>
+						<div class="info__ele-info">При температуре до 25 °C, избегая попадания прямых солнечных лучей</div>
+					</div>
+					<div class="info__element">
+						<div class="info__ele-name">Рекомендуемый курс приема:</div>
+						<div class="info__ele-info">Определяется индивидуально</div>
+					</div>
+					<div class="info__element">
+						<div class="info__ele-name">Год выпуска:</div>
+						<div class="info__ele-info">2020</div>
+					</div>
+				</div>
+			</section>
+
+		
+
+			<section class="comments">
+				<div class="comments__container">
+					<div class="title comments__title">Отзывы</div>
+
+						<div class="comments__swipers">
+							<div class="swiper comments__swiper">
+
+						  <div class="swiper-wrapper comments__wrapper">
+
+						    <div class="swiper-slide comments__slide">
+						    	<div class="commetnst__item-slider">
+						    		<div class="comments__slide-title">Андрюша</div>
+						    	<div class="comments__slide-data">12.03.2022</div>
+						    	<div class="comments__slide-descr">по 1 капсуле 2 раза в день, запивая 100 мл 
+жидкости. Жиросжигающий эффект 
+обеспечивается при прохождении 
+полноценного месячного курса. Следует 
+строго соблюдать промежуток в 12 часов 
+между каждым приемом препарата. </div>
+						    	</div>
+						    </div>
+						    <div class="swiper-slide comments__slide">
+						    	<div class="commetnst__item-slider">
+						    		<div class="comments__slide-title">Андрюша</div>
+						    	<div class="comments__slide-data">12.03.2022</div>
+						    	<div class="comments__slide-descr">по 1 капсуле 2 раза в день, запивая 100 мл 
+жидкости. Жиросжигающий эффект 
+обеспечивается при прохождении 
+полноценного месячного курса. Следует 
+строго соблюдать промежуток в 12 часов 
+между каждым приемом препарата. </div>
+						    	</div>
+						    </div>
+						    <div class="swiper-slide comments__slide">
+						    	<div class="commetnst__item-slider">
+						    		<div class="comments__slide-title">Андрюша</div>
+						    	<div class="comments__slide-data">12.03.2022</div>
+						    	<div class="comments__slide-descr">по 1 капсуле 2 раза в день, запивая 100 мл 
+жидкости. Жиросжигающий эффект 
+обеспечивается при прохождении 
+полноценного месячного курса. Следует 
+строго соблюдать промежуток в 12 часов 
+между каждым приемом препарата. </div>
+						    	</div>
+						    </div>
+
+						  </div>
+						</div>
+						  <div class="comments__prev"><svg width="22" height="38" viewBox="0 0 22 38"  xmlns="http://www.w3.org/2000/svg">
+<path d="M1.23223 17.2322C0.255922 18.2085 0.255922 19.7915 1.23223 20.7678L17.1421 36.6777C18.1184 37.654 19.7014 37.654 20.6777 36.6777C21.654 35.7014 21.654 34.1184 20.6777 33.1421L6.53553 19L20.6777 4.85787C21.654 3.88155 21.654 2.29864 20.6777 1.32233C19.7014 0.34602 18.1184 0.34602 17.1421 1.32233L1.23223 17.2322ZM3 21.5L5 21.5L5 16.5L3 16.5L3 21.5Z" />
+</svg></div>
+						  <div class="comments__next"><svg width="22" height="38" viewBox="0 0 22 38"  xmlns="http://www.w3.org/2000/svg">
+<path d="M20.7678 20.7678C21.7441 19.7915 21.7441 18.2085 20.7678 17.2322L4.85787 1.32233C3.88155 0.346019 2.29864 0.346019 1.32233 1.32233C0.34602 2.29864 0.34602 3.88155 1.32233 4.85786L15.4645 19L1.32233 33.1421C0.346019 34.1184 0.346019 35.7014 1.32233 36.6777C2.29864 37.654 3.88155 37.654 4.85786 36.6777L20.7678 20.7678ZM17 21.5L19 21.5L19 16.5L17 16.5L17 21.5Z" />
+</svg>
+</div>
+						</div>
+						<div class="btn comments__btn">Добавить отзыв</div>
+				</div>
+			</section>
+
+			
+
+			<section class="order">
+				<div class="order__container">
+					<div class="title order__title">Как сделать заказ?</div>
+					<div class="order__body">
+						<div class="order__item">
+							<div class="order__images" style="background-image: url(img/order-img-1.png);"></div>
+							<div class="order__text">Оформите заказ, введите<br> свои инициалы<br> и контактные данные</div>
+						</div>
+						<div class="order__item">
+							<div class="order__images" style="background-image: url(img/order-img-2.png);"></div>
+							<div class="order__text">Дождитесь звонка специалиста</div>
+						</div>
+						<div class="order__item">
+							<div class="order__images" style="background-image: url(img/order-img-3.png);"></div>
+							<div class="order__text">Получите товар курьером<br> или в отделении почтовой связи</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="examination">
+				<div class="examination__container">
+						<div class="title examination__title">Проверка подленности</div>
+						<div class="examination__text">
+							Если Вы приобрели продукцию на другом сайте, рекомендуем перед приёмом<br> 
+проверить на соответствие уникального кода маркировки.<br><br>
+Введите DAT-код с упаковки в поле ниже, чтобы проверить продукцию на оригинальность.
+						</div>
+							<form action="#" class="examination__form">
+								<input class="examination__input" type="text" placeholder="Например: 184645946">
+								<button class="btn examination__btn" type="submit">Проверить</button>
+							</form>
+					</div>
+					<div class="examination__images">
+						<img src="img/code.svg" alt="">
+					</div>
+			</section>
+		</main>
+		<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__body">
+            <div class="footer__info">
+            <div class="footer__info-user"><a href="#">Пользовательское соглашение</a></div>
+            <div class="footer__info-politics"><a href="#">Политика конфиденциальности</a></div>
+        </div>
+        <div class="footer__logo">
+            <div class="footer__logo-img"><img src="img/logo.svg" alt=""></div>
+            <div class="footer__logo-name">Popularmedform</div>
+        </div>
+        <div class="footer__cards">
+            <div class="footer__card-items">
+                <div class="footer__card"><img src="img/card-img-1.svg" alt=""></div>
+                <div class="footer__card"><img src="img/card-img-2.svg" alt=""></div>
+                <div class="footer__card"><img src="img/card-img-3.svg" alt=""></div>
+                <div class="footer__card"><img src="img/card-img-4.png" alt=""></div>
+            </div>
+            <div class="footer__card-info">Прием заказов: <span>Круглосуточно 24/7</span></div>
+        </div>
+        </div>
+        <div class="footer__information">© 2021, All rights reserved. (Германия) de-ru.centr-med.com</div>
+    </div>
+</footer>
+		</div>
+		
+		<script src="files/burger.js"></script>
+		<script src="files/swiper.js"></script>
+		<script src="files/swiper-product.js"></script>
+		<script src="js/app.min.js"></script>
+	</body>
+
+	
+</html>
